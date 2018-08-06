@@ -27,7 +27,7 @@ with file as f:
         eol = ""
         for chunks in range(0,chunksNr):
             if j == chunksNr:
-                eol = ""
+                eol = "\n"
             if firstLine:
                 outLine = prepend + line[i+chunks:(i+chunks)+maxOutchar+1].rstrip() + eol + append1st
             else:	
